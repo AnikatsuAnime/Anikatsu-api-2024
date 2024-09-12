@@ -1,0 +1,15 @@
+[build]
+  command = "node lib/api.js"
+  publish = "public"
+
+[context.production]
+  environment = { NODE_ENV = "production" }
+
+[build.environment]
+  NODE_VERSION = "16" # Specify your Node.js version if needed
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  
