@@ -1,0 +1,13 @@
+name = "anime-api"
+type = "javascript"  # or "webpack" if you're using a bundler
+
+account_id = "<your-cloudflare-account-id>"
+workers_dev = true  # or set to false if deploying to a custom domain
+compatibility_date = "2023-09-21"
+
+# Uncomment this if you're using Cloudflare's KV storage
+# kv_namespaces = [
+#   { binding = "ANIME_KV", id = "your-kv-id" }
+# ]
+
+# Add any other configurations here
