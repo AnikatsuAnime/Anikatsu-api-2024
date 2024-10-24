@@ -1,0 +1,30 @@
+name = "apikatsu"
+type = "javascript"
+
+# Use workers.dev subdomain (free option)
+workers_dev = true
+
+# Specify the entry point (in your case, lib/api.js is the main file)
+main = "./lib/api.js"
+
+# Optional: If deploying to a custom domain, you'll need to uncomment and fill in these fields:
+# zone_id = "your-zone-id"
+# route = "https://your-domain.com/*"
+
+# Build configuration (if needed)
+# [build]
+# upload.format = "modules"  # This is for ES Modules, adjust if using something else.
+
+# KV namespaces (optional, only if you're using Cloudflare KV storage)
+# [[kv_namespaces]]
+# binding = "MY_NAMESPACE"
+# id = "namespace-id"
+
+# Durable Objects (optional, only if you're using Durable Objects for state management)
+# [[durable_objects]]
+# bindings = {name = "MyDurableObject", class_name = "MyDurableObject"}
+
+# Environment settings (optional, for different environments like staging/production)
+# [env.production]
+# name = "my-worker-prod"
+# route = "https://example.com/*"
